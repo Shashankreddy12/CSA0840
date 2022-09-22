@@ -1,0 +1,29 @@
+m=input("month:")
+d=int(input("date:"))
+if(d>1 and d<=31):
+    if(m=='apr'or m=='may'):
+        print("sumer")
+    elif(m=='jun'and d<=20):
+        print("sumer")
+    elif(m=='mar'and d>=20):
+        print("sumer")
+    elif(m=='jul'or m=='aug'):
+        print("spring")
+    elif(m=='jun'and d>=21):
+        print("spring")
+    elif(m=='sep'and d<=21):
+        print("spring")    
+    elif(m=='oct'or m=='nov'):
+        print("fall")
+    elif(m=='sep'and d>=22):
+        print("fall")
+    elif(m=='dec'and d<=21):
+        print("fall")
+    elif(m=='feb' or m=='jan'):
+        print("winter")
+    elif(m=='mar'and d<=19):
+        print("winter")
+    elif(m=='dec' and d>=20):
+        print("winter")
+else:
+    print("wrong input")
